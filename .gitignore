@@ -1,3 +1,6 @@
+##################
+# CPP .gitignore #
+##################
 # Prerequisites
 *.d
 
@@ -15,6 +18,7 @@
 *.so
 *.dylib
 *.dll
+lib
 
 # Fortran module files
 *.mod
@@ -30,3 +34,30 @@
 *.exe
 *.out
 *.app
+
+####################
+# CMake .gitignore #
+####################
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# cmake/ctest specific to our project
+DartConfiguration.tcl
+fpthread_config.cmake
+
+# cppcheck
+/cppcheck-report
+
+cmake_uninstall.cmake
+
+# generated files
+/SimpleTest
+/DependencyTest
+/RecipeTest
